@@ -5,11 +5,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <org.opencv.android.JavaCameraView
 
-        android:id="@+id/myCameraView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Hi From Wogal"/>
 </RelativeLayout>
