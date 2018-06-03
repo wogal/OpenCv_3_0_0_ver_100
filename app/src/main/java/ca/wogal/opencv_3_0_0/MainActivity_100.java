@@ -26,8 +26,7 @@ import org.opencv.videoio.VideoCapture;
 
 
 
-
-public class MainActivity extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
+public class MainActivity_100 extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
     private static final int MY_CAMERA_REQUEST_CODE = 100;
     // var's
     private static String TAG = "wogals_debug";
@@ -48,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
+
         super.onCreate( savedInstanceState );
         test = 0x69;
         m_FramCount = 0;
@@ -87,12 +87,12 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
                     switch (status) {
                         case BaseLoaderCallback.SUCCESS: {
 
-                            ca.wogal.opencv_3_0_0.MainActivity.Opencv_100 aa;
+                            MainActivity_100.Opencv_100 aa;
 
                             test_class.test( 11 );
 
 
-                        //    ca.wogal.opencv_3_0_0.MainActivity.Opencv_100.
+                        //    ca.wogal.opencv_3_0_0.MainActivity_100.Opencv_100.
                             swapCamera();
                             cameraBridgeViewBase.enableView();
                             break;
