@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity_100">
+        <activity android:name=".openCv_Motion_100">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

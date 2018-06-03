@@ -25,7 +25,7 @@ public class Start_Page extends AppCompatActivity implements View.OnClickListene
         switch (view.getId()) {
             case R.id.But_OpenCvPage: {
                 Toast.makeText( this, "Got Req oPenCv Click", Toast.LENGTH_LONG ).show();
-                Intent intent = new Intent( Start_Page.this, MainActivity_100.class );
+                Intent intent = new Intent( Start_Page.this, openCv_Motion_100.class );
                 startActivity( intent );
                 break;
             }
