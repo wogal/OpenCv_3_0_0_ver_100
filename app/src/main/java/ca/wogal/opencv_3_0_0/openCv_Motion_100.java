@@ -56,7 +56,7 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
 
-        setContentView( R.layout.activity_main );
+        setContentView( R.layout.openCvLayout );
 
         Log.i( TAG, "Hi Wogal heck" );
 
