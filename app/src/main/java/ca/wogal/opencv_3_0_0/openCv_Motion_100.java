@@ -25,7 +25,6 @@ import org.opencv.imgproc.Imgproc;
 import org.opencv.videoio.VideoCapture;
 
 
-
 public class openCv_Motion_100 extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
     private static final int MY_CAMERA_REQUEST_CODE = 100;
     // var's
@@ -36,14 +35,13 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
         System.loadLibrary( "native-lib" );
     }
 
-
+    public int test_ans = 0;
     private Mat mat1, mat2, mat3;
     private int test;
     private CameraBridgeViewBase cameraBridgeViewBase;
     private BaseLoaderCallback baseLoaderCallback;
     private int mCameraId = 0; //add this one
     private int m_FramCount = 0;
-    public int test_ans = 0;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -92,7 +90,7 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
                             test_class.test( 11 );
 
 
-                        //    ca.wogal.opencv_3_0_0.openCv_Motion_100.Opencv_100.
+                            //    ca.wogal.opencv_3_0_0.openCv_Motion_100.Opencv_100.
                             swapCamera();
                             cameraBridgeViewBase.enableView();
                             break;
@@ -239,7 +237,7 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
 
         str1 = String.format( "Window Width %d Height %d   ", mat1.width(), mat1.height() );
 
-        Imgproc.putText( mat1, str1, new Point( 2, 600 ),1,1, new Scalar( 0, 0, 255 ) );
+        Imgproc.putText( mat1, str1, new Point( 2, 600 ), 1, 1, new Scalar( 0, 0, 255 ) );
 
 
         return mat1;
@@ -267,8 +265,8 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
 
 
     public static class Opencv_100 {
-        public int test_funcyion(int a){
-            return (a+ 10);
+        public int test_funcyion (int a) {
+            return (a + 10);
         }
     }
 }
