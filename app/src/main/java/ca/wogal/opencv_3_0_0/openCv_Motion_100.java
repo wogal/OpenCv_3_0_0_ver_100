@@ -42,6 +42,7 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
     private BaseLoaderCallback baseLoaderCallback;
     private int mCameraId = 0; //add this one
     private int m_FramCount = 0;
+    private boolean test_bool_force_return;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -54,7 +55,7 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
         getWindow().setFlags( WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN );
 
-        setContentView( R.layout.openCvLayout );
+        setContentView( R.layout.open_cv_layout );
 
         Log.i( TAG, "Hi Wogal heck" );
 
@@ -212,18 +213,22 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
         mat1 = inputFrame.rgba();
         String str1;
         Scalar debugColor;
+
         debugColor = new Scalar( 0, 0, 255 );
         Rect rect = new Rect( 10, 10, 500, 500 );// = Rect();
-
+        test_bool_force_return = true;0
         str1 = "";
-        if (true && m_FramCount > 100) {
-            try {
-                Imgproc.cvtColor( mat1, mat1, Imgproc.COLOR_BGR2GRAY );
-                str1 = " " + m_FramCount;
-            } catch (Exception ee) {
 
-                str1 = ee.getMessage();
-                str1 += " Error ";
+        if (test_bool_force_return == true) {
+            if (true && m_FramCount > 100) {
+                try {
+                    Imgproc.cvtColor( mat1, mat1, Imgproc.COLOR_BGR2GRAY );
+                    str1 = " " + m_FramCount;
+                } catch (Exception ee) {
+
+                    str1 = ee.getMessage();
+                    str1 += " Error ";
+                }
             }
         }
 
