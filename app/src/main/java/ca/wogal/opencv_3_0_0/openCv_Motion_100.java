@@ -216,7 +216,7 @@ public class openCv_Motion_100 extends AppCompatActivity implements CameraBridge
 
         debugColor = new Scalar( 0, 0, 255 );
         Rect rect = new Rect( 10, 10, 500, 500 );// = Rect();
-        test_bool_force_return = true;0
+        test_bool_force_return = true;
         str1 = "";
 
         if (test_bool_force_return == true) {
